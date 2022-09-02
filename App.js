@@ -14,7 +14,7 @@ import { Timer } from './src/features/timer';
 import { FocusHistory } from './src/features/FocusHistory';
 
 export default function App() {
-  console.log('this is going to github');
+  console.log('this is going to github and we are testing stuff');
   const [currentSubject, setCurrentSubject] = useState();
   const [history, setHistory] = useState([])
   return (
