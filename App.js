@@ -14,13 +14,14 @@ import { Timer } from './src/features/timer';
 import { FocusHistory } from './src/features/FocusHistory';
 
 export default function App() {
+  console.log('this is going to github');
   const [currentSubject, setCurrentSubject] = useState();
   const [history, setHistory] = useState([])
   return (
     <SafeAreaView style={styles.container}>
       {!currentSubject ? ( //means if we do not have a current subject, show the focus feature
        <>
-        <Focus addSubject={setCurrentSubject} /> //whenever we call addSubject inside focus, it will know to add it as a value, which will be added when the 'onPress' function is called in focus
+        <Focus addSubject={setCurrentSubject} /> 
         <FocusHistory history={history} />
         </>
       ) : (
@@ -52,3 +53,5 @@ const styles = StyleSheet.create({
     backgroundColor: colors.darkBlue,
   },
 });
+
+// whenever we call addSubject inside focus, it will know to add it as a value, which will be added when the 'onPress' function is called in focus
